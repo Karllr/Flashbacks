@@ -45,6 +45,12 @@ function Player(x,y,mode){
         this.yvel=0;
         this.inverted=false;
       }
+        if(this.y>height+levelHeight){
+          this.x=this.respawn.x;
+          this.y=this.respawn.y;
+          this.yvel=0;
+          this.inverted=false;
+      }
       this.x+=this.speed;
       this.hitPortal=false;
       this.collideWith(this.speed,0,blocks);
