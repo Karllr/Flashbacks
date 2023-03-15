@@ -780,6 +780,18 @@ function Block(x,y,type1,type2,type3,type4){
                         triangle(this.x+this.Sz/2,this.y+5,this.x,this.y+this.Sz/2,this.x+this.Sz/2,this.y+this.Sz-5);
                     break;
                     case 3:
+                        switch(this.type3){
+                            case 1:
+                            break;
+                            case 2:
+                            break;
+                            case 3:
+                            break;
+                            case 4:
+                            break;
+                            case 5:
+                            break;
+                        }
                         fill(0);
                         stroke(0);
                         strokeWeight(5);
