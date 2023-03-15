@@ -782,19 +782,21 @@ function Block(x,y,type1,type2,type3,type4){
                     case 3:
                         switch(this.type3){
                             case 1:
+                                fill(0);
                             break;
                             case 2:
+                                fill(255);
                             break;
                             case 3:
+                                fill(255);
                             break;
                             case 4:
+                                fill(63,19,41);
                             break;
                             case 5:
+                                fill(1,51,33);
                             break;
                         }
-                        fill(0);
-                        stroke(0);
-                        strokeWeight(5);
                         triangle(this.x+this.Sz/2,this.y+5,this.x,this.y+this.Sz/2,this.x+this.Sz/2,this.y+this.Sz-5);
                     break;
                     case 4:
@@ -820,9 +822,23 @@ function Block(x,y,type1,type2,type3,type4){
                         triangle(this.x,this.y+5,this.x+this.Sz/2,this.y+this.Sz/2,this.x,this.y+this.Sz-5);
                     break;
                     case 3:
-                        fill(0);
-                        stroke(0);
-                        strokeWeight(5);
+                        switch(this.type3){
+                            case 1:
+                                fill(0);
+                            break;
+                            case 2:
+                                fill(255);
+                            break;
+                            case 3:
+                                fill(255);
+                            break;
+                            case 4:
+                                fill(63,19,41);
+                            break;
+                            case 5:
+                                fill(1,51,33);
+                            break;
+                        }
                         triangle(this.x,this.y+5,this.x+this.Sz/2,this.y+this.Sz/2,this.x,this.y+this.Sz-5);
                     break;
                     case 4:
@@ -984,29 +1000,25 @@ function Block(x,y,type1,type2,type3,type4){
                             case 1:
                                 noStroke();
                                 fill(0);
-                                triangle(this.x+this.Sz/2,this.y,this.x,this.y+this.Sz,this.x+this.Sz,this.y+this.Sz);
                             break;
                             case 2:
                                 noStroke();
                                 fill(255);
-                                triangle(this.x+this.Sz/2,this.y,this.x,this.y+this.Sz,this.x+this.Sz,this.y+this.Sz);
                             break;
                             case 3:
                                 noStroke();
                                 fill(255);
-                                triangle(this.x+this.Sz/2,this.y,this.x,this.y+this.Sz,this.x+this.Sz,this.y+this.Sz);
                             break;
                             case 4:
                                 noStroke();
                                 fill(63,19,41);
-                                triangle(this.x+this.Sz/2,this.y,this.x,this.y+this.Sz,this.x+this.Sz,this.y+this.Sz);
                             break;
                             case 5:
                                 noStroke();
                                 fill(1,51,33);
-                                triangle(this.x+this.Sz/2,this.y,this.x,this.y+this.Sz,this.x+this.Sz,this.y+this.Sz);
                             break;
                         }
+                        triangle(this.x+this.Sz/2,this.y,this.x,this.y+this.Sz,this.x+this.Sz,this.y+this.Sz);
                     break;
                 }
             break;
