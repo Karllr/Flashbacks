@@ -16,6 +16,7 @@ var blocks=[
   [],
   [],
   [],
+  [],
 ];
 var level=0;
 var keys=[];
